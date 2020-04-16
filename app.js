@@ -1,9 +1,7 @@
 'use strict';
 
-function theAlert() {
+alert('Welcome to Cat Personalities!');
 
-    alert('Welcome to Cat Personalities!');
-}
 
 function askingNameAndAge() {
 
@@ -13,6 +11,6 @@ function askingNameAndAge() {
     document.write('<h3>' + userName + '</h3>');
 }
 
-theAlert();
+
 askingNameAndAge();
 
