@@ -1,5 +1,7 @@
 'use strict';
 
+alert('Hi');
+
 var userName = prompt('What is your name?');
 var userAge = prompt('What is your age?');
 
