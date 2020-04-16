@@ -1,8 +1,18 @@
 'use strict';
 
-alert('Hi');
+function alert() {
 
-var userName = prompt('What is your name?');
-var userAge = prompt('What is your age?');
+    alert('Welcome to Cat Personalities!');
+}
 
-document.write('<h3>' + userName + '</h3>');
+function askingNameAndAge() {
+
+    var userName = prompt('What is your name?');
+    var userAge = prompt('What is your age?');
+    
+    document.write('<h3>' + userName + '</h3>');
+}
+
+alert();
+askingNameAndAge();
+
