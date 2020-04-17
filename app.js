@@ -7,7 +7,7 @@ var userName = prompt('What is your name?');
 function askingNameAndAge() {
     var userAge = prompt('What is your age?');
     
-    document.write('<h3>' + userName + '</h3>');
+    document.write('<h3>' + userName + ' of Purrington' + '</h3>');
 }
 
 while( (doYouLoveCats != 'YES') && (doYouLoveCats != 'NO') ){
@@ -17,6 +17,7 @@ while( (doYouLoveCats != 'YES') && (doYouLoveCats != 'NO') ){
 if(doYouLoveCats === 'NO'){
     var areYouADog = prompt('Are you sure?').toUpperCase();
 }
+
 function howMuchYouLoveCats(){
     console.log('doYouLoveCats' + doYouLoveCats)
     if (doYouLoveCats === 'YES'){
@@ -27,9 +28,6 @@ function howMuchYouLoveCats(){
     }
     else if (areYouADog === 'YES'){
         alert('The sassy cats might be coming for you!');
-      
-    //  } else {
-    //      alert('CATS ARE THE BEST CREATURES!')
      }
 }
     
@@ -54,7 +52,14 @@ function forceGuessingGame() {
 }
 
 
+function catGreeting(){
+    if(doYouLoveCats === 'YES'){
+        document.write('<h3>' + 'Welcome ' + userName + ' the friend of all Sassy and Sweet Cats!' + '<h3>');
+    }
+}
+
 
 howMuchYouLoveCats();
 forceGuessingGame();
 askingNameAndAge();
+catGreeting();
